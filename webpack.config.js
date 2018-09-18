@@ -40,5 +40,9 @@ module.exports = {
   plugins: [
     new ExtractTextPlugin('./snake.bundle.css')
   ],
+  devServer: {
+    contentBase: path.resolve(__dirname, './'),
+    port: 8080
+  },
   devtool: 'source-map',
 };
